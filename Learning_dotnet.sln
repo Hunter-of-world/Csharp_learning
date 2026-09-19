@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SectionTwo", "SectionTwo\SectionTwo.csproj", "{8D546F94-73CA-4F38-AB5E-0CDDD80F08D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section04_OOP", "Section04_OOP\Section04_OOP.csproj", "{60D239F1-3E7F-4950-B0CE-0ECAC9397D31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section05_OOP", "Section05_OOP\Section05_OOP.csproj", "{60D239F1-3E7F-4950-B0CE-0ECAC9397D31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
