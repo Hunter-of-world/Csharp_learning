@@ -1,0 +1,15 @@
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/bin/Debug/net10.0/SectionTwo
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/bin/Debug/net10.0/SectionTwo.deps.json
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/bin/Debug/net10.0/SectionTwo.runtimeconfig.json
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/bin/Debug/net10.0/SectionTwo.dll
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/bin/Debug/net10.0/SectionTwo.pdb
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/obj/Debug/net10.0/SectionTwo.GeneratedMSBuildEditorConfig.editorconfig
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/obj/Debug/net10.0/SectionTwo.AssemblyInfoInputs.cache
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/obj/Debug/net10.0/SectionTwo.AssemblyInfo.cs
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/obj/Debug/net10.0/SectionTwo.csproj.CoreCompileInputs.cache
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/obj/Debug/net10.0/SectionTwo.dll
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/obj/Debug/net10.0/refint/SectionTwo.dll
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/obj/Debug/net10.0/SectionTwo.pdb
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/obj/Debug/net10.0/SectionTwo.genruntimeconfig.cache
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/obj/Debug/net10.0/ref/SectionTwo.dll
+/home/zaid/RiderProjects/Learining dotnet/Learning_dotnet/SectionTwo/obj/Debug/net10.0/SectionTwo.sourcelink.json
