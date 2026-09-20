@@ -7,3 +7,8 @@ public class Product
     
     
 }
+
+public class DomseticProduct : Product
+{
+    
+}

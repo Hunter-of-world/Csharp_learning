@@ -30,5 +30,20 @@
         System.Console.WriteLine(p3.productID);
         System.Console.WriteLine(p3.productName);
         System.Console.WriteLine(p3.productPrice);
-    }
+        //storing all of them in one 
+        double totalPrice = p1.productPrice + p2.productPrice + p3.productPrice;
+        System.Console.WriteLine("the total price is: "+ totalPrice);
+        //comparing which one have the highst price
+        if(p1.productPrice > p2.productPrice && p2.productPrice > p3.productPrice )
+        {
+            System.Console.WriteLine( "p1 is the highest price ");
+        }else if (p2.productPrice > p1.productPrice && p2.productPrice > p1.productPrice)
+        {
+            System.Console.WriteLine( "p2 is the highest price ");
+        }
+        else
+        {
+            System.Console.WriteLine( "p3 is the highest price ");
+        }
+    } 
 }
