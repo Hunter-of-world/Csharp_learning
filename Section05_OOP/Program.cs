@@ -49,7 +49,9 @@
         {
             System.Console.WriteLine( "p3 is the highest price ");
         }
-            
+        //Pulling the static field through class name . name of the field
         System.Console.WriteLine("the total number of products is: " + Product.TotalProducts);
+        //Pulling the const field (we cant change it from here like the static fields it can only be change from the same class)
+        System.Console.WriteLine("the Categorty of the products is: "+   Product.CategoryName);
     } 
 }
