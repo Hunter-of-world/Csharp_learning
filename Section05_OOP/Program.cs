@@ -7,7 +7,7 @@ class Program
     {
         //local constant
         const string developerName = "zaid";
-        //create reference variables
+        //create objects
         Product p1 = new Product();
         //accessing the new field through the product class (not through an object)
         Product.TotalProducts++; //first adding
