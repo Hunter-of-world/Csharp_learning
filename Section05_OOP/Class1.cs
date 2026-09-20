@@ -9,6 +9,14 @@ public class Product
     public static int TotalProducts;
     //declaring a new type of field (const field)
     public const string CategoryName = "Electronics";
+    //declaring a new type of field (readonly field)
+    public readonly string DateOfPurchase;
+    //constructor 
+     public Product()
+    {
+        DateOfPurchase = System.DateTime.Now.ToString();
+    }
+
 
 
 }

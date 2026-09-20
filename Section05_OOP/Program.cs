@@ -26,17 +26,20 @@
         System.Console.WriteLine(p1.productID);
         System.Console.WriteLine(p1.productName);
         System.Console.WriteLine(p1.productPrice);
+        System.Console.WriteLine("the date of purchase is "+p1.DateOfPurchase);
         //product 2
         System.Console.WriteLine(p2.productID);
         System.Console.WriteLine(p2.productName);
         System.Console.WriteLine(p2.productPrice);
+        System.Console.WriteLine("the date of purchase is "+p2.DateOfPurchase);
         //product 3
         System.Console.WriteLine(p3.productID);
         System.Console.WriteLine(p3.productName);
         System.Console.WriteLine(p3.productPrice);
+        System.Console.WriteLine("the date of purchase is "+p3.DateOfPurchase);
         //storing all of them in one 
         double totalPrice = p1.productPrice + p2.productPrice + p3.productPrice;
-        System.Console.WriteLine("the total price is: "+ totalPrice);
+        System.Console.WriteLine("the total price of all products is: "+ totalPrice);
         //comparing which one have the highst price
         if(p1.productPrice > p2.productPrice && p2.productPrice > p3.productPrice )
         {
