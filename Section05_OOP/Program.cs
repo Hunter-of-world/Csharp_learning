@@ -1,8 +1,13 @@
-﻿class Program
+﻿using System.Runtime.Serialization;
+using System.Security.Cryptography;
+
+class Program
 {
     public static void Main()
     {
-        //create objects
+        //local constant
+        const string developerName = "zaid";
+        //create reference variables
         Product p1 = new Product();
         //accessing the new field through the product class (not through an object)
         Product.TotalProducts++; //first adding
