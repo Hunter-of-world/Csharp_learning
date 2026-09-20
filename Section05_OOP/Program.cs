@@ -4,8 +4,12 @@
     {
         //create objects
         Product p1 = new Product();
+        //accessing the new field through the product class (not through an object)
+        Product.TotalProducts++; //first adding
         Product p2 = new Product();
+        Product.TotalProducts++; //second adding
         Product p3 = new Product();
+        Product.TotalProducts++; //third adding
 
         //intilize fields
         p1.productID = 1;
@@ -45,5 +49,7 @@
         {
             System.Console.WriteLine( "p3 is the highest price ");
         }
+            
+        System.Console.WriteLine("the total number of products is: " + Product.TotalProducts);
     } 
 }
