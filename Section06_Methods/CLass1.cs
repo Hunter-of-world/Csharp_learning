@@ -1,11 +1,11 @@
 public class Product
 {
 
-    public int productID;
-    public string productName;
-    public double productPrice;
-    public int quantityInStock;
-    public double tax;
+    private int productID;
+    private string productName;
+    private double productPrice;
+    private int quantityInStock;
+    private double tax;
     //declaring a new type of field (static field)
     //fields can be access in the same filed with writing the class name or with it 
     public static int totalProducts;
