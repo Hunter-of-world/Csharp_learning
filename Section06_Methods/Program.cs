@@ -1,7 +1,4 @@
-﻿using System.Runtime.Serialization;
-using System.Security.Cryptography;
-
-class Program
+﻿class Program
 {
     public static void Main()
     {
@@ -10,22 +7,22 @@ class Program
         //create objects
         Product p1 = new Product();
         //accessing the new field through the product class (not through an object)
-        Product.TotalProducts++; //first adding
+        Product.totalProducts++; //first adding
         Product p2 = new Product();
-        Product.TotalProducts++; //second adding
+        Product.totalProducts++; //second adding
         Product p3 = new Product();
-        Product.TotalProducts++; //third adding
+        Product.totalProducts++; //third adding
 
-        //intilize fields
-        p1.productID = 1;
-        p1.productName = "Iphone X";
-        p1.productPrice = 5000;
-        p2.productID = 2;
-        p2.productName = "Samsung Galaxy X";
-        p2.productPrice = 5000;
-        p3.productID = 3;
-        p3.productName = "mac";
-        p3.productPrice = 5000;
+        //intilize fields and Encapsulation
+        p1.SetProductID(1);
+        p1.SetProductName("Iphone X");
+        p1.SetProductPrice(5000);
+        p2.SetProductID(2);
+        p2.SetProductName("Samsung Galaxy X");
+        p2.SetProductPrice(7500);
+        p3.SetProductID(3);
+        p3.SetProductName("mac");
+        p3.SetProductPrice(9000) ;
         
         //call methods
         p1.CalculateTax();
@@ -34,33 +31,33 @@ class Program
         
         //print them
         //product 1
-        System.Console.WriteLine(p1.productID);
-        System.Console.WriteLine(p1.productName);
-        System.Console.WriteLine(p1.productPrice);
-        System.Console.WriteLine("the date of purchase is "+p1.DateOfPurchase);
-        System.Console.WriteLine("Tax: " + p1.tax);
+        System.Console.WriteLine(p1.GetProductID());
+        System.Console.WriteLine(p1.GetProductName());
+        System.Console.WriteLine(p1.GetProductPrice());
+        System.Console.WriteLine("the date of purchase is "+p1.GetDateOfPurchase());
+        System.Console.WriteLine("Tax: " + p1.GetTax());
 
         //product 2
-        System.Console.WriteLine(p2.productID);
-        System.Console.WriteLine(p2.productName);
-        System.Console.WriteLine(p2.productPrice);
-        System.Console.WriteLine("the date of purchase is "+p2.DateOfPurchase);
-        System.Console.WriteLine("Tax: " + p2.tax);
+        System.Console.WriteLine(p2.GetProductID());
+        System.Console.WriteLine(p2.GetProductName());
+        System.Console.WriteLine(p2.GetProductPrice());
+        System.Console.WriteLine("the date of purchase is "+p2.GetDateOfPurchase());
+        System.Console.WriteLine("Tax: " + p2.GetTax());
 
         //product 3
-        System.Console.WriteLine(p3.productID);
-        System.Console.WriteLine(p3.productName);
-        System.Console.WriteLine(p3.productPrice);
-        System.Console.WriteLine("the date of purchase is "+p3.DateOfPurchase);
-        System.Console.WriteLine("Tax: " + p3.tax);
+        System.Console.WriteLine(p3.GetProductID());
+        System.Console.WriteLine(p3.GetProductName());
+        System.Console.WriteLine(p3.GetProductPrice());
+        System.Console.WriteLine("the date of purchase is "+p3.GetDateOfPurchase());
+        System.Console.WriteLine("Tax: " + p3.GetTax());
         //storing all of them in one 
-        double totalPrice = p1.productPrice + p2.productPrice + p3.productPrice;
+        double totalPrice = p1.GetProductPrice() + p2.GetProductPrice() + p3.GetProductPrice();
         System.Console.WriteLine("the total price of all products is: "+ totalPrice);
         //comparing which one have the highst price
-        if(p1.productPrice > p2.productPrice && p2.productPrice > p3.productPrice )
+        if(p1.GetProductPrice() > p2.GetProductPrice() && p2.GetProductPrice() > p3.GetProductPrice() )
         {
             System.Console.WriteLine( "p1 is the highest price ");
-        }else if (p2.productPrice > p1.productPrice && p2.productPrice > p1.productPrice)
+        }else if (p2.GetProductPrice() > p1.GetProductPrice() && p2.GetProductPrice() > p1.GetProductPrice())
         {
             System.Console.WriteLine( "p2 is the highest price ");
         }
@@ -69,8 +66,8 @@ class Program
             System.Console.WriteLine( "p3 is the highest price ");
         }
         //Pulling the static field through class name . name of the field
-        System.Console.WriteLine("the total number of products is: " + Product.TotalProducts);
+        System.Console.WriteLine("the total number of products is: " + Product.totalProducts);
         //Pulling the const field (we cant change it from here like the static fields it can only be change from the same class)
-        System.Console.WriteLine("the Categorty of the products is: "+   Product.CategoryName);
+        System.Console.WriteLine("the Categorty of the products is: "+   Product.categoryName);
     } 
 }
