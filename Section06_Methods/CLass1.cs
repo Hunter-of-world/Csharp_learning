@@ -4,7 +4,7 @@ public class Product
     private int productID;
     private string productName;
     private double productPrice;
-    private int quantityInStock;
+    private int quantityInStock; 
     private double tax;
     //declaring a new type of field (static field)
     //fields can be access in the same filed with writing the class name or with it 
@@ -74,6 +74,18 @@ public class Product
     {
         return dateOfPurchase;
     }
+    //new static method
+    //static set method for total Products
+    public static void SetTotalProducts(int value)
+    {
+        totalProducts = value;
+    }
+    //static get method for total Products
+    public static int GetToralProducts()
+    {
+        return totalProducts;
+    }
+ 
     /*cost <= 20000 than tax = 10%
      cost > 20000 than tax = 12.5%*/
     public void CalculateTax()

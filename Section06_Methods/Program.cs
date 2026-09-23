@@ -7,11 +7,11 @@
         //create objects
         Product p1 = new Product();
         //accessing the new field through the product class (not through an object)
-        Product.totalProducts++; //first adding
+        Product.SetTotalProducts(Product.GetToralProducts()+1); //first adding using static method
         Product p2 = new Product();
-        Product.totalProducts++; //second adding
+        Product.SetTotalProducts(Product.GetToralProducts()+1); //second adding using static method
         Product p3 = new Product();
-        Product.totalProducts++; //third adding
+        Product.SetTotalProducts(Product.GetToralProducts()+1); //third adding using static method
 
         //intilize fields and Encapsulation
         p1.SetProductID(1);
@@ -66,7 +66,7 @@
             System.Console.WriteLine( "p3 is the highest price ");
         }
         //Pulling the static field through class name . name of the field
-        System.Console.WriteLine("the total number of products is: " + Product.totalProducts);
+        System.Console.WriteLine("the total number of products is: " + Product.GetToralProducts());
         //Pulling the const field (we cant change it from here like the static fields it can only be change from the same class)
         System.Console.WriteLine("the Categorty of the products is: "+   Product.categoryName);
     } 
