@@ -28,8 +28,8 @@
         p3.SetQuantityInStock(799);
         
         //call methods (tax method using default arguments )
-        p1.CalculateTax(9.2);
-        p2.CalculateTax(7.5);
+        p1.CalculateTax(percentage:9.2);
+        p2.CalculateTax(percentage: 7.5);
         p3.CalculateTax(); //there will br a default value from the arguments which is 4.5
         
         //print them
