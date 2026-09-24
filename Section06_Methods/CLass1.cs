@@ -96,7 +96,7 @@ public class Product
  
     /*cost <= 20000 than tax = 10%
      cost > 20000 than tax = 12.5%*/
-    public void CalculateTax()
+    public void CalculateTax(double percentage = 4.5) //setting up a default value
     {
         //local variable (its only access able in the same method )
         double t;
@@ -108,7 +108,7 @@ public class Product
         }
         else
         {
-            t = productPrice * 12.5 / 100;
+            t = productPrice * percentage / 100;
         }
 
         tax = t;

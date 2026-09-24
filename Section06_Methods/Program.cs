@@ -16,7 +16,7 @@
         //intilize fields and Encapsulation
         p1.SetProductID(1);
         p1.SetProductName("Iphone X");
-        p1.SetProductPrice(5000);
+        p1.SetProductPrice(20000);
         p1.SetQuantityInStock(2000);
         p2.SetProductID(2);
         p2.SetProductName("Samsung Galaxy X");
@@ -27,16 +27,16 @@
         p3.SetProductPrice(9000) ;
         p3.SetQuantityInStock(799);
         
-        //call methods
-        p1.CalculateTax();
-        p2.CalculateTax();
-        p3.CalculateTax();
+        //call methods (tax method using default arguments )
+        p1.CalculateTax(9.2);
+        p2.CalculateTax(7.5);
+        p3.CalculateTax(); //there will br a default value from the arguments which is 4.5
         
         //print them
         //product 1
         System.Console.WriteLine(p1.GetProductID());
         System.Console.WriteLine(p1.GetProductName());
-        System.Console.WriteLine(p1.GetProductPrice());
+        System.Console.WriteLine("the product price is: "+ p1.GetProductPrice());
         System.Console.WriteLine("the quantity of this product is: "+p1.GetQuantityInStock());
         System.Console.WriteLine("the date of purchase is "+p1.GetDateOfPurchase());
         System.Console.WriteLine("Tax: " + p1.GetTax());
@@ -44,7 +44,7 @@
         //product 2
         System.Console.WriteLine(p2.GetProductID());
         System.Console.WriteLine(p2.GetProductName());
-        System.Console.WriteLine(p2.GetProductPrice());
+        System.Console.WriteLine("the product price is: "+ p2.GetProductPrice());
         System.Console.WriteLine("the quantity of this product is: "+p2.GetQuantityInStock());
         System.Console.WriteLine("the date of purchase is "+p2.GetDateOfPurchase());
         System.Console.WriteLine("Tax: " + p2.GetTax());
@@ -52,7 +52,7 @@
         //product 3
         System.Console.WriteLine(p3.GetProductID());
         System.Console.WriteLine(p3.GetProductName());
-        System.Console.WriteLine(p3.GetProductPrice());
+        System.Console.WriteLine("the product price is: "+ p3.GetProductPrice());
         System.Console.WriteLine("the quantity of this product is: "+p3.GetQuantityInStock());
         System.Console.WriteLine("the date of purchase is "+p3.GetDateOfPurchase());
         System.Console.WriteLine("Tax: " + p3.GetTax());
