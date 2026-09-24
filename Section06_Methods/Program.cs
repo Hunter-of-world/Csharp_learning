@@ -29,7 +29,7 @@
         
         //call methods (tax method using default arguments )
         p1.CalculateTax(percentage:9.2);
-        p2.CalculateTax(percentage: 7.5);
+        p2.CalculateTax(10000,3.4); //calling the new overlaoding method
         p3.CalculateTax(); //there will br a default value from the arguments which is 4.5
         
         //print them

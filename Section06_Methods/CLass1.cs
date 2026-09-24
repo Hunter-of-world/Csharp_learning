@@ -113,5 +113,21 @@ public class Product
 
         tax = t;
     }
+    //new overloading method
+    public void CalculateTax(double productPrice ,double percentage)
+    {
+        //local variable (its only access able in the same method )
+        double t;
+        
+        //calculate tax 
+        if (productPrice <= 50000)
+        {
+            t = productPrice * 5 / 100;
+        }
+        else
+        {
+            t = productPrice * percentage / 100;
+        }
+    }
 
 }
