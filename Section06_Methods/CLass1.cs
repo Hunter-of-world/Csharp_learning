@@ -4,8 +4,9 @@ public class Product
     private int productID;
     private string productName;
     private double productPrice;
-    private int quantityInStock; 
+    public int quantityInStock; 
     private double tax;
+    private static int totalQuantity;
     //declaring a new type of field (static field)
     //fields can be access in the same filed with writing the class name or with it 
     public static int totalProducts;
@@ -60,7 +61,7 @@ public class Product
         return tax;
     }
     //set method for quantityInStock
-    public void GetQuantityInStock(int value)
+    public void SetQuantityInStock(int value)
     {
         quantityInStock = value;
     }
@@ -81,9 +82,16 @@ public class Product
         totalProducts = value;
     }
     //static get method for total Products
-    public static int GetToralProducts()
+    public static int GetTotalProducts()
     {
         return totalProducts;
+    }
+    //static method to calculate total quantity
+    public static int GetTotalQuantity(Product p1, Product p2, Product p3)
+    {
+        int total;
+        total=p1.GetQuantityInStock() + p2.GetQuantityInStock() + p3.GetQuantityInStock();
+        return total;
     }
  
     /*cost <= 20000 than tax = 10%
