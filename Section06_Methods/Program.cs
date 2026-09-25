@@ -28,10 +28,10 @@
         p3.SetQuantityInStock(799);
         
         //call methods (tax method using default arguments )
-        double p = 7.4;
+        double p;
         p1.CalculateTax(20000,7);
         p2.CalculateTax(10000,3.4); //calling the new overlaoding method
-        p3.CalculateTax(ref p); //creating a ref variable
+        p3.CalculateTax(out p); //creating an out variable
         System.Console.WriteLine("p is "+p);
         
         //print them

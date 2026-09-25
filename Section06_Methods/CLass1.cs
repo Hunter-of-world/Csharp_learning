@@ -96,7 +96,7 @@ public class Product
  
     /*cost <= 20000 than tax = 10%
      cost > 20000 than tax = 12.5%*/
-    public void CalculateTax( ref double percentage) //setting up a ref 
+    public void CalculateTax( out double percentage) //setting up an out method 
     {
         //local variable (its only access able in the same method )
         double t;
