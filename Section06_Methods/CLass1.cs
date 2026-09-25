@@ -96,11 +96,11 @@ public class Product
  
     /*cost <= 20000 than tax = 10%
      cost > 20000 than tax = 12.5%*/
-    public void CalculateTax( out double percentage) //setting up an out method 
+    public void CalculateTax( in double percentage) //setting up an in method 
     {
         //local variable (its only access able in the same method )
         double t;
-        percentage = 10.4;
+        //
         //calculate tax 
         if (productPrice <= 20000)
         {

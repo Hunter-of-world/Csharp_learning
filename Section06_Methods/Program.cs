@@ -30,7 +30,8 @@
         //call methods (tax method using default arguments )
         p1.CalculateTax(20000,7);
         p2.CalculateTax(10000,3.4); //calling the new overlaoding method
-        p3.CalculateTax(out double p); //creating an out variable and declaring p at the same time
+        double p=10; 
+        p3.CalculateTax(in p); //creating an in argument
         System.Console.WriteLine("p is "+p);
         
         //print them
