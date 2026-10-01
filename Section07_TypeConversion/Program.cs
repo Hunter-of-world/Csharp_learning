@@ -2,11 +2,11 @@
 {
     public static void Main()
     {
-    //try parse
-    string s;
-    s=System.Console.ReadLine();
-
-    int.TryParse(s, out int b);
-    System.Console.WriteLine(b);
+    //conversion methods 
+    int a = 100;
+    string b;
+    //int to stirng
+    b=System.Convert.ToString(a);
+    System.Console.WriteLine(b+1);
     }
 }
