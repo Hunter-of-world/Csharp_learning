@@ -2,11 +2,12 @@
 {
     public static void Main()
     {
-        //Implicit Casting 
-        //sbyte to int
-        int a = 10;
-        int b;
-        b = a;
-        System.Console.WriteLine(b);
+        //Parse casting
+        string a = "100";
+        int b;  
+        //string to int
+        b=int.Parse(a);
+        System.Console.WriteLine(b+1);
+
     }
 }
