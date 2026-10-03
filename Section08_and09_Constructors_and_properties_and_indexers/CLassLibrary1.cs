@@ -4,6 +4,8 @@ public class Employee
     private int _empID;
     private string _empName;
     private string _empJob;
+    private double _salary;
+    private double _tax;
     
     //instance property
     public int EmpID
@@ -66,17 +68,21 @@ public class Employee
         this._empID = empId;
         this._empName = empName;
         this._empJob = empJob;
+        this._salary = 1000;
     }
 
     public Employee(int empId, string empName)
     {
         this._empID = _empID;
         this._empName = empName;
+        this._salary = 1000;
+
     }
 
     public Employee()
     {
-        
+        this._salary = 1000;
+
     }
 
     //static constructors
@@ -84,5 +90,26 @@ public class Employee
     {
             _companyName = "computiq";
     }
-    
+    //readonly property
+    public double Salary
+    {
+        get
+        {
+            return _salary;
+        }
+    }
+    //writeonly property
+    public double Tax
+    {
+        set
+        {
+            _tax = value;
+        }
+    }
+    //method using a readonly property
+    public double CalculatNetSalary()
+    {
+        double t = Salary - _tax;
+        return t;
+    }
 }
