@@ -3,8 +3,12 @@
      static void Main()
      {
          //create three objects for Employee
-         Employee emp1 = new Employee(101,"zaid","trinee");
-         Employee emp2 = new Employee(102,"abdullah","mentor");
+         Employee emp1 = new Employee();
+         emp1.empID = 101;
+         emp1.empName = "zaid";
+         emp1.empJob = "trainee";
+         Employee emp2 = new Employee(102,"abdullah");
+         emp2.empJob = "trainer";
          Employee emp3 = new Employee(103,"mukalh","manger");
          //display fields
          //first object

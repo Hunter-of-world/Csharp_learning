@@ -8,12 +8,23 @@ public class Employee
     //static Fields
     public static string companyName;
     
-    //constructors 
+    //constructors
     public Employee(int empID, string empName, string empJob)
     {
         this.empID = empID;
         this.empName = empName;
         this.empJob = empJob;
+    }
+
+    public Employee(int empId, string empName)
+    {
+        this.empID = empID;
+        this.empName = empName;
+    }
+
+    public Employee()
+    {
+        
     }
 
     //static constructors
