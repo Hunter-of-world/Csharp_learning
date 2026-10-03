@@ -8,6 +8,7 @@
          emp1.EmpName = "zaid";
          emp1.EmpJob = "trainee";
          emp1.Tax = 50;//since its readonly i cant call it but i can use it in methods
+         emp1.NativePlace = "iraq";
          Employee emp2 = new Employee(102,"abdullah");
          emp2.EmpJob = "trainer";
          Employee emp3 = new Employee(103,"mukalh","manger");
@@ -20,6 +21,7 @@
          System.Console.WriteLine("Employee job is "+emp1.EmpJob);
          System.Console.WriteLine("his salary is "+emp1.Salary);//since its readonly i can change it value
          System.Console.WriteLine("his salary aftet tax it " + emp1.CalculatNetSalary());
+         System.Console.WriteLine("he lives in "+emp1.NativePlace);
          //second object
          System.Console.WriteLine("Employee id is "+emp2.EmpID);
          System.Console.WriteLine("Employee name is "+emp2.EmpName);

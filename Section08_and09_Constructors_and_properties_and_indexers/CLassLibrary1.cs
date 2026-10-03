@@ -112,4 +112,6 @@ public class Employee
         double t = Salary - _tax;
         return t;
     }
+    //automatic property
+    public string NativePlace { get; set; }
 }
