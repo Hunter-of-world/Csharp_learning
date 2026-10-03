@@ -10,6 +10,7 @@
          Employee emp2 = new Employee(102,"abdullah");
          emp2.empJob = "trainer";
          Employee emp3 = new Employee(103,"mukalh","manger");
+         Employee emp4 = new Employee() { empID = 104, empName = "zaid", empJob = "Ceo" }; //object initializer 
          //display fields
          //first object
          System.Console.WriteLine("company name is "+Employee.companyName);
@@ -24,7 +25,10 @@
          System.Console.WriteLine("Employee id is "+emp3.empID);
          System.Console.WriteLine("Employee name is "+emp3.empName);
          System.Console.WriteLine("Employee job is "+emp3.empJob);
-
+         //fourth object
+         System.Console.WriteLine("Employee id is "+emp4.empID);
+         System.Console.WriteLine("Employee name is "+emp4.empName);
+         System.Console.WriteLine("Employee job is "+emp4.empJob);
 
          
 
