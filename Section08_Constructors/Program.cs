@@ -8,7 +8,8 @@
          Employee emp3 = new Employee(103,"mukalh","manger");
          //display fields
          //first object
-         System.Console.WriteLine("Employee id is "+emp1.empID);
+         System.Console.WriteLine("company name is "+Employee.companyName);
+         System.Console.WriteLine("\nEmployee id is "+emp1.empID);
          System.Console.WriteLine("Employee name is "+emp1.empName);
          System.Console.WriteLine("Employee job is "+emp1.empJob);
          //second object
