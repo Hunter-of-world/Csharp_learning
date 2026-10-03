@@ -113,5 +113,5 @@ public class Employee
         return t;
     }
     //automatic property
-    public string NativePlace { get; set; }
+    public string NativePlace { get; set; } = "iraq baghdad";
 }

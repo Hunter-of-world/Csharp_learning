@@ -27,16 +27,22 @@
          System.Console.WriteLine("Employee name is "+emp2.EmpName);
          System.Console.WriteLine("Employee job is "+emp2.EmpJob);
          System.Console.WriteLine("his salary is "+emp2.Salary);
+         System.Console.WriteLine("his salary is "+emp2.NativePlace);
+
          //third object
          System.Console.WriteLine("Employee id is "+emp3.EmpID);
          System.Console.WriteLine("Employee name is "+emp3.EmpName);
          System.Console.WriteLine("Employee job is "+emp3.EmpJob);
          System.Console.WriteLine("his salary is "+emp3.Salary);
+         System.Console.WriteLine("his salary is "+emp3.NativePlace);
+
          //fourth object
          System.Console.WriteLine("Employee id is "+emp4.EmpID);
          System.Console.WriteLine("Employee name is "+emp4.EmpName);
          System.Console.WriteLine("Employee job is "+emp4.EmpJob);
          System.Console.WriteLine("his salary is "+emp4.Salary);
+         System.Console.WriteLine("his salary is "+emp4.NativePlace);
+
 
          
 
