@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section06_Methods", "Sectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section07_TypeConversion", "Section07_TypeConversion\Section07_TypeConversion.csproj", "{B3A166A1-44CC-4F50-B2DD-BCB0A081065E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section08_Constructors", "Section08_Constructors\Section08_Constructors.csproj", "{B9DD0579-33C0-4995-8954-09B9DFA92529}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section08_and09_Constructors_and_properties_and_indexers", "Section08_and09_Constructors_and_properties_and_indexers\Section08_and09_Constructors_and_properties_and_indexers.csproj", "{B9DD0579-33C0-4995-8954-09B9DFA92529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
