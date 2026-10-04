@@ -6,6 +6,19 @@ public class Employee
     private string _empJob;
     private double _salary;
     private double _tax;
+    private string[] _usaProperties = new string[] { "desks", "chairs", "labtops" };
+    //public indexer
+    public string this[int index]
+    {
+        set
+        {
+            this._usaProperties[index] = value;
+        }
+        get
+        {
+            return _usaProperties[index];
+        }
+    }
     
     //instance property
     public int EmpID

@@ -12,10 +12,12 @@
          Employee emp2 = new Employee(102,"abdullah");
          emp2.EmpJob = "trainer";
          Employee emp3 = new Employee(103,"mukalh","manger");
-         Employee emp4 = new Employee() { EmpID = 104, EmpName = "zaid", EmpJob = "Ceo" }; //object initializer 
+         Employee emp4 = new Employee() { EmpID = 104, EmpName = "mahmood", EmpJob = "Ceo" }; //object initializer 
+         Employee items = new Employee();
          //display fields
          //first object
          System.Console.WriteLine("company name is "+Employee.CompanyName);
+         System.Console.WriteLine("from the usa embc it has "+items[0]+" "+items[1]+" "+items[2]);
          System.Console.WriteLine("\nEmployee id is "+emp1.EmpID);
          System.Console.WriteLine("Employee name is "+emp1.EmpName);
          System.Console.WriteLine("Employee job is "+emp1.EmpJob);
@@ -25,23 +27,23 @@
          //second object
          System.Console.WriteLine("Employee id is "+emp2.EmpID);
          System.Console.WriteLine("Employee name is "+emp2.EmpName);
-         System.Console.WriteLine("Employee job is "+emp2.EmpJob);
+         System.Console.WriteLine("Employee job is "+emp2.EmpJob);wh y
          System.Console.WriteLine("his salary is "+emp2.Salary);
-         System.Console.WriteLine("his salary is "+emp2.NativePlace);
+         System.Console.WriteLine("he lives in "+emp2.NativePlace);
 
          //third object
          System.Console.WriteLine("Employee id is "+emp3.EmpID);
          System.Console.WriteLine("Employee name is "+emp3.EmpName);
          System.Console.WriteLine("Employee job is "+emp3.EmpJob);
          System.Console.WriteLine("his salary is "+emp3.Salary);
-         System.Console.WriteLine("his salary is "+emp3.NativePlace);
+         System.Console.WriteLine("hi lives in "+emp3.NativePlace);
 
          //fourth object
          System.Console.WriteLine("Employee id is "+emp4.EmpID);
          System.Console.WriteLine("Employee name is "+emp4.EmpName);
          System.Console.WriteLine("Employee job is "+emp4.EmpJob);
          System.Console.WriteLine("his salary is "+emp4.Salary);
-         System.Console.WriteLine("his salary is "+emp4.NativePlace);
+         System.Console.WriteLine("he lives in "+emp4.NativePlace);
 
 
          
