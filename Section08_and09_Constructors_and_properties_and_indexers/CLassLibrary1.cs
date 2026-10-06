@@ -7,6 +7,8 @@ public class Employee
     private double _salary;
     private double _tax;
     private string[] _usaProperties = new string[] { "desks", "chairs", "labtops" };
+
+    private string[] _names = new string[] { "first", "second", "third" };
     //public indexer
     public string this[int index]
     {
@@ -18,7 +20,20 @@ public class Employee
         {
             return _usaProperties[index];
         }
+        //indexer overloading
+        }
+        public string this[string name]
+    {
+        set
+        {
+            this._usaProperties[Array.IndexOf(_names,name)] = value;
+        }
+        get
+        {
+            return _usaProperties[Array.IndexOf(_names,name)];
+        }
     }
+    
     
     //instance property
     public int EmpID

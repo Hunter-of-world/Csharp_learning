@@ -17,17 +17,18 @@
          //display fields
          //first object
          System.Console.WriteLine("company name is "+Employee.CompanyName);
-         System.Console.WriteLine("from the usa embc it has "+items[0]+" "+items[1]+" "+items[2]);
+         System.Console.WriteLine("from the usa embc it has " + items[0]);
+         System.Console.WriteLine("from the usa embc it has " + items["second"]);
          System.Console.WriteLine("\nEmployee id is "+emp1.EmpID);
          System.Console.WriteLine("Employee name is "+emp1.EmpName);
          System.Console.WriteLine("Employee job is "+emp1.EmpJob);
          System.Console.WriteLine("his salary is "+emp1.Salary);//since its readonly i can change it value
-         System.Console.WriteLine("his salary aftet tax it " + emp1.CalculatNetSalary());
+         System.Console.WriteLine("his salary after tax it " + emp1.CalculatNetSalary());
          System.Console.WriteLine("he lives in "+emp1.NativePlace);
          //second object
          System.Console.WriteLine("Employee id is "+emp2.EmpID);
          System.Console.WriteLine("Employee name is "+emp2.EmpName);
-         System.Console.WriteLine("Employee job is "+emp2.EmpJob);wh y
+         System.Console.WriteLine("Employee job is "+emp2.EmpJob);
          System.Console.WriteLine("his salary is "+emp2.Salary);
          System.Console.WriteLine("he lives in "+emp2.NativePlace);
 
