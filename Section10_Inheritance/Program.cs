@@ -23,6 +23,12 @@
         sm1.Location = "iraq.baghdad.thalbaa";
         sm1.Region = "south";
         System.Console.WriteLine("the total sales of the month is" + sm1.GetTotalSalesOfTheMonth());
+        
+        //creating objects of the ProjectManger class
+        ProjectManger pm1 = new ProjectManger();
+        pm1.EmpId = 104;
+        pm1.EmpName = "farooq";
+        pm1.Location = "iraq.baghdad.harthya";
 
     }
 }

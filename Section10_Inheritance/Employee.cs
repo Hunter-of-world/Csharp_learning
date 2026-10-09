@@ -14,7 +14,7 @@ public class Employee
         }
         get
         {
-            return EmpId;
+            return _empID;
         }
     }
 
