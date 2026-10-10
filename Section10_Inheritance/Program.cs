@@ -13,8 +13,9 @@
         mgr1.EmpId = 100;
         mgr1.EmpName = "muklah";
         mgr1.Location = "iraq.baghdad.karrada";
-        mgr1.DepartmentName = "coordination";
-        System.Console.WriteLine("the total sales of the year is" + mgr1.GetTotalSalesOfTheYear());
+        mgr1.DepartmentName = "coordination ";
+        System.Console.WriteLine("the total sales of the year is " + mgr1.GetTotalSalesOfTheYear());
+        System.Console.WriteLine("he is "+mgr1.GetFullDepartmentName());
 
         //creating objects of the salesman class
         SalesMan sm1 = new SalesMan();
@@ -22,7 +23,7 @@
         sm1.EmpName = "mahmmod";
         sm1.Location = "iraq.baghdad.thalbaa";
         sm1.Region = "south";
-        System.Console.WriteLine("the total sales of the month is" + sm1.GetTotalSalesOfTheMonth());
+        System.Console.WriteLine("the total sales of the month is "  + sm1.GetTotalSalesOfTheMonth());
         
         //creating objects of the ProjectManger class
         ProjectManger pm1 = new ProjectManger();

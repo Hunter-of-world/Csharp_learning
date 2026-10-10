@@ -16,8 +16,16 @@ public class Manger:Employee
         }
     }
 
+    
+    
+
     public long GetTotalSalesOfTheYear()
     {
         return 10000;
+    }
+
+    public string GetFullDepartmentName()
+    {
+        return DepartmentName + "at " + base.Location;
     }
 }
