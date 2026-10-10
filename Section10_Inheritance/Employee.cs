@@ -5,6 +5,15 @@ public class Employee
     private string _empName;
     private string _location;
     
+    //constructors 
+    public Employee(int empId, string empName, string location)
+    {
+        this._empID = empId;
+        this._location = location;
+        this._empName = empName;
+
+    }
+    
     //properties
     public int EmpId
     {

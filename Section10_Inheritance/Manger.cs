@@ -3,6 +3,13 @@ public class Manger:Employee
     //fields
     private string _departmentName;
     
+    //constructors
+    public Manger(int empId, string empName, string location ,string departmentName): base(empId,empName,location)
+    {
+        _departmentName = departmentName;
+
+    }
+    
     //properties
     public string DepartmentName
     {
