@@ -10,6 +10,12 @@ public class Manger:Employee
 
     }
     
+    //methods
+    //method hiding: same name same parameters but the return type can be different
+    public new string GetHealthInsuranceAmount()
+    {
+        return "health insurance Amount is: " + 1500;
+    }
     //properties
     public string DepartmentName
     {

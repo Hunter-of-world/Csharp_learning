@@ -8,7 +8,7 @@
         System.Console.WriteLine("employee id is "+emp1.EmpId);
         System.Console.WriteLine("employee name is "+emp1.EmpName);
         System.Console.WriteLine("employee location is "+emp1.Location);
-        
+        System.Console.WriteLine("his "+emp1.GetHealthInsuranceAmount());
         //creating objects of the manger class
         Manger mgr1 = new Manger(100,"muklah","iraq.baghdad.karrada","coordination");
         System.Console.WriteLine("\nemployee id is "+mgr1.EmpId);
@@ -17,6 +17,11 @@
         System.Console.WriteLine("employee job is "+mgr1.DepartmentName);
         System.Console.WriteLine("the total sales of the year is " + mgr1.GetTotalSalesOfTheYear());
         System.Console.WriteLine("he is "+mgr1.GetFullDepartmentName());
+        System.Console.WriteLine("his "+mgr1.GetHealthInsuranceAmount());
+        //base-typed reference to the same object
+        Employee eRef = mgr1;
+        System.Console.WriteLine("his "+eRef.GetHealthInsuranceAmount());
+
 
         //creating objects of the salesman class
         SalesMan sm1 = new SalesMan(103,"mahmood","iraq.baghdad.thalbaa","south");

@@ -14,6 +14,11 @@ public class Employee
 
     }
     
+    //method
+    public string GetHealthInsuranceAmount()
+    {
+        return "health insurance Amount is: " + 500;
+    }
     //properties
     public int EmpId
     {
