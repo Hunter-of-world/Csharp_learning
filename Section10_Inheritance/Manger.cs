@@ -11,10 +11,11 @@ public class Manger:Employee
     }
     
     //methods
-    //method hiding: same name same parameters but the return type can be different
-    public new string GetHealthInsuranceAmount()
+    //method overriding: same name same parameters
+    public override string GetHealthInsuranceAmount()
     {
-        return "health insurance Amount is: " + 1500;
+        //if u want to call the parent method use the BASE keyword
+        return "additonial health insurance Amount is: " + 1500;
     }
     //properties
     public string DepartmentName

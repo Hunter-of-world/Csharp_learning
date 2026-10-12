@@ -14,8 +14,8 @@ public class Employee
 
     }
     
-    //method
-    public string GetHealthInsuranceAmount()
+    //virtual method
+    public virtual string GetHealthInsuranceAmount()
     {
         return "health insurance Amount is: " + 500;
     }
