@@ -2,14 +2,6 @@
 {
     static void Main()
     {
-        //create objects of the employee class
-        Employee emp1 = new Employee(101,"zaid","iraq.baghdad.zayona");
-        
-        System.Console.WriteLine("employee id is "+emp1.EmpId);
-        System.Console.WriteLine("employee name is "+emp1.EmpName);
-        System.Console.WriteLine("employee location is "+emp1.Location);
-        System.Console.WriteLine("his "+emp1.GetHealthInsuranceAmount());
-        //creating objects of the manger class
         Manger mgr1 = new Manger(100,"muklah","iraq.baghdad.karrada","coordination");
         System.Console.WriteLine("\nemployee id is "+mgr1.EmpId);
         System.Console.WriteLine("employee name is "+mgr1.EmpName);

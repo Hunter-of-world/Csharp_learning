@@ -1,4 +1,4 @@
-public class Employee
+public abstract class Employee
 {
     //fields
     private int _empID;
