@@ -11,10 +11,9 @@ public class Manger:Employee
     }
     
     //methods
-    //method overriding: same name same parameters
+    //method overriding abstract method
     public override string GetHealthInsuranceAmount()
     {
-        //if u want to call the parent method use the BASE keyword
         return "additonial health insurance Amount is: " + 1500;
     }
     //properties

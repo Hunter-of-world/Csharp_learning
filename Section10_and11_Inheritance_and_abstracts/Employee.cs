@@ -14,11 +14,8 @@ public abstract class Employee
 
     }
     
-    //virtual method
-    public virtual string GetHealthInsuranceAmount()
-    {
-        return "health insurance Amount is: " + 500;
-    }
+    //abstract method
+    public abstract string GetHealthInsuranceAmount();
     //properties
     public int EmpId
     {

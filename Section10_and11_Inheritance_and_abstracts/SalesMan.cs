@@ -26,5 +26,9 @@ public class SalesMan:Employee
     {
         return 1000;
     }
+    public override string GetHealthInsuranceAmount()
+    {
+        return "additonial health insurance Amount is: " + 2000;
+    }
 
 }
