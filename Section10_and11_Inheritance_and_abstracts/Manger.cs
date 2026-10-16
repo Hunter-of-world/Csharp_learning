@@ -1,18 +1,59 @@
-public class Manger:Employee
+public class Manger:IEmployee
 {
     //fields
     private string _departmentName;
+    private string _empName;
+    private string _location;
+    private int _empId;
+    public int EmpID
+    {
+        get
+        {
+            return _empId;
+        }
+        set
+        {
+            _empId = value;
+        }
+    }
+
+    public string EmpName
+    {
+        get
+        {
+            return _empName;
+        }
+        set
+        {
+            _empName = value;
+        }
+    }
+
+    public string Location
+    {
+        get
+        {
+            return _location;
+        }
+        set
+        {
+            _location = value;
+        }
+    }
     
     //constructors
-    public Manger(int empId, string empName, string location ,string departmentName): base(empId,empName,location)
+    public Manger(int empID, string empName, string location, string departmentName)
     {
         _departmentName = departmentName;
+        this._empName = empName;
+        this._empId = empID;
+        this._location = location;
 
     }
     
     //methods
-    //method overriding abstract method
-    public override string GetHealthInsuranceAmount()
+    //method overriding abstract method not required for interface
+    public string GetHealthInsuranceAmount()
     {
         return "additonial health insurance Amount is: " + 1500;
     }
@@ -39,6 +80,6 @@ public class Manger:Employee
 
     public string GetFullDepartmentName()
     {
-        return DepartmentName + "at " + base.Location;
+        return DepartmentName + "at " + Location;
     }
 }
