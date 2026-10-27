@@ -1,4 +1,4 @@
-public  interface IEmployee
+public  interface IEmployee:IPerson
 {
     
     //abstract method

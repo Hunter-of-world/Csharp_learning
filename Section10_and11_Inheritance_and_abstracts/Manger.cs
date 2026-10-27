@@ -1,4 +1,4 @@
-public class Manger:IEmployee,IPerson
+public class Manger:IEmployee
 {
     //fields
     private string _departmentName;
@@ -55,12 +55,13 @@ public class Manger:IEmployee,IPerson
     }
     
     //constructors
-    public Manger(int empID, string empName, string location, string departmentName)
+    public Manger(int empID, string empName, string location, string departmentName,string dateOfBirth)
     {
         _departmentName = departmentName;
         this._empName = empName;
         this._empId = empID;
         this._location = location;
+        this._dateOfBirth = System.Convert.ToDateTime(dateOfBirth);
 
     }
     

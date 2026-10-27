@@ -5,7 +5,7 @@ public class ProjectManger:Manger
 private int _totalNumberOfProjects;
 
 //constructors
-    public ProjectManger (int empID,string empName,string location, int totalNumberOfProjects,string departmentName) : base(empID, empName, location,departmentName)
+    public ProjectManger (int empID,string empName,string location, int totalNumberOfProjects,string departmentName,string dateOfBirth) : base(empID, empName, location,departmentName,dateOfBirth)    
     {
         _totalNumberOfProjects = totalNumberOfProjects;
     }

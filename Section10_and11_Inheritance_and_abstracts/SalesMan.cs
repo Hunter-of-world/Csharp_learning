@@ -5,6 +5,21 @@ public class SalesMan:IEmployee
     private string _empName;
     private string _location;
     private int _empId;
+    private System.DateTime _dateOfBirth;
+    
+    
+    public System.DateTime DateOfBirth
+    {
+        set
+        {
+            _dateOfBirth = value;
+        }
+        get
+        {
+            return _dateOfBirth;
+        }
+    } 
+    
     public int EmpID
     {
         get
@@ -16,6 +31,7 @@ public class SalesMan:IEmployee
             _empId = value;
         }
     }
+    
 
     public string EmpName
     {
@@ -41,12 +57,14 @@ public class SalesMan:IEmployee
         }
     }
     //constructors
-    public SalesMan(int empID, string empName, string location,string region)
+    public SalesMan(int empID, string empName, string location,string region, string dateOfBirth)
     {
         _region = region;
         this._empName = empName;
         this._empId = empID;
         this._location = location;
+        this._dateOfBirth = System.Convert.ToDateTime(dateOfBirth);
+      
     }
     
     //properties
@@ -62,6 +80,13 @@ public class SalesMan:IEmployee
         }
     }
     //methods
+    
+    public int GetAge()
+    {
+        int age =System.Convert.ToInt32((System.DateTime.Now - DateOfBirth).TotalDays / 365);
+        return age;
+    }
+    
     public long GetTotalSalesOfTheMonth()
     {
         return 1000;
