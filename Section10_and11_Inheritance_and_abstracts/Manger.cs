@@ -1,10 +1,23 @@
-public class Manger:IEmployee
+public class Manger:IEmployee,IPerson
 {
     //fields
     private string _departmentName;
     private string _empName;
     private string _location;
     private int _empId;
+    private System.DateTime _dateOfBirth;
+
+    public System.DateTime DateOfBirth
+    {
+        set
+        {
+            _dateOfBirth = value;
+        }
+        get
+        {
+            return _dateOfBirth;
+        }
+    }
     public int EmpID
     {
         get
@@ -57,6 +70,13 @@ public class Manger:IEmployee
     {
         return "additonial health insurance Amount is: " + 1500;
     }
+
+    public int GetAge()
+    {
+        int age =System.Convert.ToInt32((System.DateTime.Now - DateOfBirth).TotalDays / 365);
+        return age;
+    }
+
     //properties
     public string DepartmentName
     {

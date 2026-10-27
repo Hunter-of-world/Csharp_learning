@@ -26,5 +26,12 @@
         System.Console.WriteLine("employee name is "+pm1.EmpName);
         System.Console.WriteLine("employee location is "+pm1.Location);
         
+        //new interface class
+        IPerson person;
+            person= new Manger(107, "zaid", "iraq", "media");
+            person.DateOfBirth = System.Convert.ToDateTime("2007-10-10");
+            System.Console.WriteLine("\n"+ person.GetAge());
+        
+
     }
 }
